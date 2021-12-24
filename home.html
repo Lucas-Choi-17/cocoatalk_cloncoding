@@ -2,39 +2,95 @@
 <html>
 
 <head>
-    <title>Home - My First Website</title>
+    <title>Home - My first Website</title>
     <style>
         body {
             height: 1000vh;
             margin: 50px;
         }
 
-        div {
-            width: 300px;
-            height: 300px;
+        span {
+            color: tomato;
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        p span {
             color: white;
-            background-color: teal;
-            position: relative;
         }
 
-        #different {
-            background-color: wheat;
+        div>span {
+            text-decoration: underline;
         }
 
-        .green {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            background-color: green;
-            height: 100px;
-            width: 100px;
+        p~span {
+            color: teal;
+        }
+
+        input {
+            border: 1px solid wheat;
+        }
+
+        input:required {
+            border-color: tomato;
+        }
+
+        input[type="password"] {
+            background-color: yellow;
+        }
+
+        input[placeholder~="name"] {
+            background-color: thistle;
+        }
+
+        button:hover {
+            background-color: tomato;
+        }
+
+        a:visited {
+            color: tomato;
+        }
+
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        form:focus-within {
+            border-color: seagreen;
+        }
+
+        form:hover input:focus {
+            background-color: sienna;
         }
     </style>
 </head>
 
 <body>
-    <div id="different">
-        <div class="green"></div>
+    <div>
+        <span>hello</span>
+        <p>
+            dfkjbs dijfbs dksjfbkpv cvc vbjdkfm dnc xijbidj fmsd fdhbfisdbfkdm fmdn hdfishjf
+            dsf.<span>inside</span>
+        </p>
+        <address>hi</address>
+        <span>Hellooo</span>
+        <span>hello</span>
+        <form>
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="password" required placeholder="password" />
+        </form>
+        <button>Hello</button>
+        <a href="https://apple.kr">Go to Apple</a>
+        <form>
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+        </form>
     </div>
 </body>
 
