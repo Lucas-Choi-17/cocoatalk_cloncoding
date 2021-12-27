@@ -1,97 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr">
 
 <head>
-    <title>Home - My first Website</title>
+    <title>Home - My first website</title>
     <style>
         body {
-            height: 1000vh;
-            margin: 50px;
-        }
-
-        span {
-            color: tomato;
-            background-color: yellowgreen;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        p span {
-            color: white;
-        }
-
-        div>span {
-            text-decoration: underline;
-        }
-
-        p~span {
-            color: teal;
-        }
-
-        input {
-            border: 1px solid wheat;
-        }
-
-        input:required {
-            border-color: tomato;
-        }
-
-        input[type="password"] {
-            background-color: yellow;
-        }
-
-        input[placeholder~="name"] {
-            background-color: thistle;
-        }
-
-        button:hover {
-            background-color: tomato;
-        }
-
-        a:visited {
-            color: tomato;
-        }
-
-        form {
-            border: 1px solid salmon;
             display: flex;
-            flex-direction: column;
-            padding: 20px;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
         }
 
-        form:focus-within {
-            border-color: seagreen;
+        a {
+            font-size: 40px;
+            color: wheat;
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
         }
 
-        form:hover input:focus {
-            background-color: sienna;
+        a:hover {
+            border-radius: 15px;
+            color: tomato;
+            background-color: wheat;
+        }
+
+        @keyframes coin-flip {
+            0% {
+                transform: rotateX(0);
+            }
+
+            50% {
+                transform: rotateX(360deg)translateX(100px);
+            }
+
+            100% {
+                transform: rotateX(0);
+            }
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            border: 5px solid black;
+            border-radius: 50%;
+            animation: coin-flip 2s infinite;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <span>hello</span>
-        <p>
-            dfkjbs dijfbs dksjfbkpv cvc vbjdkfm dnc xijbidj fmsd fdhbfisdbfkdm fmdn hdfishjf
-            dsf.<span>inside</span>
-        </p>
-        <address>hi</address>
-        <span>Hellooo</span>
-        <span>hello</span>
-        <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" required placeholder="password" />
-        </form>
-        <button>Hello</button>
-        <a href="https://apple.kr">Go to Apple</a>
-        <form>
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
-            <input type="text" name="" id="" />
-        </form>
-    </div>
+    <a href="https://apple.kr">Go to Apple</a>
+    </br>
+    <img src="img/surfer.jpeg" />
+    <span>hahahahaha</span>
 </body>
 
 </html>
