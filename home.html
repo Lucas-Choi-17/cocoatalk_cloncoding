@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
 
 <head>
     <title>Home - My first website</title>
@@ -9,53 +9,36 @@
             height: 100vh;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
-        a {
-            font-size: 40px;
-            color: wheat;
-            background-color: tomato;
-            text-decoration: none;
-            padding: 3px 5px;
-            border-radius: 5px;
-            transition: all 1s ease-in-out;
+        div {
+            background-color: teal;
+            height: 200px;
+            width: 200px;
         }
 
-        a:hover {
-            border-radius: 15px;
-            color: tomato;
-            background-color: wheat;
-        }
-
-        @keyframes coin-flip {
-            0% {
-                transform: rotateX(0);
-            }
-
-            50% {
-                transform: rotateX(360deg)translateX(100px);
-            }
-
-            100% {
-                transform: rotateX(0);
+        @media screen and (min-width:1100px) and (max-width:1200px) {
+            div {
+                background-color: tomato;
             }
         }
 
-        img {
-            width: 400px;
-            height: 400px;
-            border: 5px solid black;
-            border-radius: 50%;
-            animation: coin-flip 2s infinite;
+        span {
+            font-size: 36px;
+        }
+
+        @media screen and (orientation: landscape) {
+            span {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
-    <a href="https://apple.kr">Go to Apple</a>
-    </br>
-    <img src="img/surfer.jpeg" />
-    <span>hahahahaha</span>
+    <div></div>
+    <span>Please flip your phone :(</span>
 </body>
 
 </html>
