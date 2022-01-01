@@ -1,13 +1,13 @@
 .status-bar {
   margin-top: 7px;
-  font-size: 30px;
+  font-size: 14px;
   display: flex;
 }
 .status-bar__column {
   width: 33%;
 }
 .status-bar__column:first-child span {
-  margin-left: 5px;
+  margin: 0 10px;
 }
 .status-bar__column:nth-child(2) {
   display: flex;
@@ -18,5 +18,5 @@
   justify-content: flex-end;
 }
 .status-bar__column .fa-battery-quarter {
-  margin: 0 5px;
+  margin: 0 7px;
 }
