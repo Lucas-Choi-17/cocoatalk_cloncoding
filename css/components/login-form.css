@@ -6,15 +6,17 @@
 }
 #login-form input {
   font-size: 18px;
-  opacity: 40%;
   padding: 15px 0;
   border: none;
   width: 100%;
   margin-bottom: 7px;
 }
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
 #login-form input:not([type="submit"]) {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
-  transition: border-color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 #login-form input:focus {
   border-color: var(--yellow);

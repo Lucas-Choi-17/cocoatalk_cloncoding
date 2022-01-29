@@ -11,5 +11,5 @@
 .welcome-header__text {
   margin-top: 25px;
   font-size: 16px;
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
 }
