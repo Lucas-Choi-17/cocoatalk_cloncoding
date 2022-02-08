@@ -13,6 +13,9 @@
 .screen-header span {
   margin-left: 20px;
 }
+.screen-header span > a {
+  font-size: 16px;
+}
 .screen-header__icons span[class="badge"] {
   width: 5px;
   height: 5px;
